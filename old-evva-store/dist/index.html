@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Evva | Redefine Style</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        /* Specific Landing Page Overrides */
+        body.landing-page {
+            overflow: hidden;
+            /* Prevent scrolling on landing */
+        }
+
+        .landing-hero {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(30, 30, 30, 1) 0%, rgba(10, 10, 10, 1) 100%);
+            position: relative;
+        }
+
+        .landing-title {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .landing-subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.3s forwards;
+        }
+
+        .enter-btn {
+            padding: 1.2rem 4rem;
+            font-size: 1.2rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.6s forwards;
+            box-shadow: 0 10px 30px rgba(123, 77, 255, 0.4);
+        }
+
+        .enter-btn:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 15px 40px rgba(123, 77, 255, 0.6);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Ambient Background Effect */
+        .ambient-light {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            filter: blur(150px);
+            opacity: 0.15;
+            animation: pulse 8s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.1;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 0.2;
+            }
+        }
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/style-DfYWc-Sz.css">
+</head>
+
+<body class="landing-page">
+    <div class="landing-hero">
+        <div class="ambient-light"></div>
+        <h1 class="landing-title">Evva.</h1>
+        <p class="landing-subtitle">The Future of Fashion is Here.</p>
+        <a href="home.html" class="enter-btn">Explore Now</a>
+    </div>
+</body>
+
+</html>

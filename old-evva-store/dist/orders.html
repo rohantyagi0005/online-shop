@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | Evva Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/script-Cde9ZjDY.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-DfYWc-Sz.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Evva.</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop Now</a>
+            <a href="orders.html" class="active">My Orders</a>
+            <a href="recently-viewed.html">Recently Viewed</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." class="search-input">
+                <button class="icon-btn" id="search-btn" aria-label="Search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <button class="icon-btn" id="cart-btn" aria-label="Cart">
+                <span class="cart-badge" id="cart-count">0</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>My Orders</h1>
+        <p>Track your past purchases and current shipments.</p>
+    </div>
+
+    <div class="orders-container">
+        <div class="order-card">
+            <div class="order-header">
+                <div>
+                    <span class="order-id">Order #EV-7782</span>
+                    <span class="order-date">Placed on Jan 5, 2026</span>
+                </div>
+                <div class="order-status delivered">Delivered</div>
+            </div>
+            <div class="order-items">
+                <div class="order-item">
+                    <div class="item-img"></div>
+                    <div class="item-details">
+                        <h4>Lumina Jacket</h4>
+                        <p>Qty: 1 | Size: M</p>
+                    </div>
+                    <div class="item-price">$129.00</div>
+                </div>
+            </div>
+            <div class="order-footer">
+                <button class="secondary-btn">View Invoice</button>
+                <button class="primary-btn">Track Order</button>
+            </div>
+        </div>
+
+        <div class="order-card">
+            <div class="order-header">
+                <div>
+                    <span class="order-id">Order #EV-7901</span>
+                    <span class="order-date">Placed on Jan 8, 2026</span>
+                </div>
+                <div class="order-status processing">Processing</div>
+            </div>
+            <div class="order-items">
+                <div class="order-item">
+                    <div class="item-img"></div>
+                    <div class="item-details">
+                        <h4>Nebula Watch</h4>
+                        <p>Qty: 1 | Color: Black</p>
+                    </div>
+                    <div class="item-price">$199.00</div>
+                </div>
+            </div>
+            <div class="order-footer">
+                <button class="secondary-btn">View Invoice</button>
+                <button class="primary-btn">Track Order</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Evva.</h2>
+                <p>Elevating lifestyle since 2026.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Evva Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

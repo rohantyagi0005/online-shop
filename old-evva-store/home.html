@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evva Store | Premium Shopping Experience</title>
+    <meta name="description"
+        content="Discover exclusive collections at Evva Store. Your destination for premium fashion and lifestyle products.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Evva.</div>
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="shop.html">Shop Now</a>
+            <a href="orders.html">My Orders</a>
+            <a href="recently-viewed.html">Recently Viewed</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." class="search-input">
+                <button class="icon-btn" id="search-btn" aria-label="Search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <button class="icon-btn" id="cart-btn" aria-label="Cart">
+                <span class="cart-badge" id="cart-count">0</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Redefine Your <br> <span class="gradient-text">Style.</span></h1>
+            <p class="hero-subtitle">Experience the new era of fashion with Evva. Curated for the bold and the elegant.
+            </p>
+            <a href="shop.html" class="cta-button">Explore Collection</a>
+        </div>
+        <div class="hero-visual">
+
+            <!-- Abstract shapes for background -->
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="section-header">
+            <h2>Trending Now</h2>
+            <p>Our most popular premium selections.</p>
+        </div>
+        <div class="product-grid" id="product-grid">
+            <!-- Populated via JS -->
+        </div>
+    </section>
+
+    <!-- Pre-Footer Call to Action -->
+    <section class="pre-footer-cta">
+        <div class="cta-content">
+            <h2>Ready to Elevate Your Look?</h2>
+            <p>Join thousands of trendsetters today.</p>
+            <a href="shop.html" class="cta-button large-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Evva.</h2>
+                <p>Elevating lifestyle since 2026.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Evva Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

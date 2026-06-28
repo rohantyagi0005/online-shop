@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Evva Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/script-Cde9ZjDY.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-DfYWc-Sz.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Evva.</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="shop.html" class="active">Shop Now</a>
+            <a href="orders.html">My Orders</a>
+            <a href="recently-viewed.html">Recently Viewed</a>
+        </div>
+        <div class="nav-actions">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search..." class="search-input">
+                <button class="icon-btn" id="search-btn" aria-label="Search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </button>
+            </div>
+            <button class="icon-btn" id="cart-btn" aria-label="Cart">
+                <span class="cart-badge" id="cart-count">0</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1"></circle>
+                    <circle cx="20" cy="21" r="1"></circle>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Shop Collection</h1>
+        <p>Explore our premium range of products.</p>
+    </div>
+
+    <div class="shop-container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li class="active">All</li>
+                <li>Outerwear</li>
+                <li>Footwear</li>
+                <li>Accessories</li>
+                <li>Watches</li>
+            </ul>
+        </aside>
+        <main class="shop-grid" id="shop-grid">
+            <!-- Populated via JS -->
+            <!-- Hardcoded for now for immediate visual if JS fails or for static serving concept -->
+            <div class="product-card">
+                <div class="product-image"><span>Lumina Jacket</span></div>
+                <div class="product-info">
+                    <h3>Lumina Jacket</h3>
+                    <p class="price">$129.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><span>Ethereal Sneakers</span></div>
+                <div class="product-info">
+                    <h3>Ethereal Sneakers</h3>
+                    <p class="price">$89.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><span>Vortex Bag</span></div>
+                <div class="product-info">
+                    <h3>Vortex Bag</h3>
+                    <p class="price">$45.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><span>Nebula Watch</span></div>
+                <div class="product-info">
+                    <h3>Nebula Watch</h3>
+                    <p class="price">$199.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><span>Solaris Sunglasses</span></div>
+                <div class="product-info">
+                    <h3>Solaris Sunglasses</h3>
+                    <p class="price">$55.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image"><span>Lunar Boots</span></div>
+                <div class="product-info">
+                    <h3>Lunar Boots</h3>
+                    <p class="price">$145.00</p>
+                    <button class="add-btn">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Pre-Footer Call to Action -->
+    <section class="pre-footer-cta">
+        <div class="cta-content">
+            <h2>Didn't find what you're looking for?</h2>
+            <p>Check out our upcoming collection.</p>
+            <a href="#" class="cta-button large-btn">View Lookbook</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Evva.</h2>
+                <p>Elevating lifestyle since 2026.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Evva Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

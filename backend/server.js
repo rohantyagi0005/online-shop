@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-require('dotenv').config();
+require('dotenv').config({ path: path.join(__dirname, '.env') });
 
 const authRoutes = require('./routes/auth.routes');
 const settingsRoutes = require('./routes/settings.routes');
@@ -48,6 +48,22 @@ app.use((req, res, next) => {
   next();
 });
 
+// Serve static assets in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../frontend/dist')));
+  app.get('*', (req, res) => {
+    if (req.originalUrl.startsWith('/api')) {
+      return res.status(404).json({ message: "API endpoint not found." });
+    }
+    res.sendFile(path.resolve(__dirname, '../frontend', 'dist', 'index.html'));
+  });
+} else {
+  // Root check endpoint
+  app.get('/', (req, res) => {
+    res.json({ message: "Gift & Stationery Shop API is online." });
+  });
+}
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error("Express Error Handler:", err.stack);
@@ -55,11 +71,6 @@ app.use((err, req, res, next) => {
     message: err.message || "Internal server error.",
     error: process.env.NODE_ENV === 'development' ? err : {}
   });
-});
-
-// Root check endpoint
-app.get('/', (req, res) => {
-  res.json({ message: "Gift & Stationery Shop API is online." });
 });
 
 app.listen(PORT, () => {

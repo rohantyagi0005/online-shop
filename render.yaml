@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: gift-stationery-shop
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: DB_HOST
+        placeholder: "e.g. bxxxxxx-mysql.services.clever-cloud.com"
+      - key: DB_USER
+        placeholder: "e.g. uxxxxxx"
+      - key: DB_PASSWORD
+        placeholder: "Your database password"
+      - key: DB_NAME
+        placeholder: "e.g. bxxxxxx"
